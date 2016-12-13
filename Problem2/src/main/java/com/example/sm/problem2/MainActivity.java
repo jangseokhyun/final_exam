@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         // need something here
+        ArrayList emp_list = new ArrayList();
 
         adapter = new MyBaseAdapter(this, emp_list);
         listview = (ListView) findViewById(R.id.listView1) ;
@@ -56,6 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 }
 
 interface Payment {
-    void increase();
-    void decrease();
+    void increase(int s);
+    void decrease(int s);
 }
